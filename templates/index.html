@@ -1,19 +1,24 @@
- <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Hello, World!. This is Lalitha Pragada</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</head>
-	<body>
-		<div>
-  			<h1>Hello, World!</h1>
-		</div>
-
-	</body>
+<!doctype html>
+<head>
+<title>Daily Stock Closing Pricing</title>
+<!-- <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}' -->
+</head>
+<body>
+	<div>
+		<h3>Daily Stock Closing Pricing</h3><BR>
+  		<h4>Please enter a VALID stock ticker (eg. GOOG = Google, AAPL = Apple) to check closing price</h4>
+      <p>(Click <a href='https://www.quandl.com/data/WIKI'>here</a> for a full list of stock tickers)</p>
+  		<form id='ticker_input' method='post' action='chart_page' >
+    		<p>
+    		Ticker symbol: <input type='text' name='ticker' />
+      	</p>
+      	</p>
+      	Closing price <input type='checkbox' name='feature' value='close' />
+      	</p>
+      	<p>
+    		<input type='submit' value='Submit' />
+      	</p>
+    	</form>
+	</div>
+</body>
 </html>
-
-
-
